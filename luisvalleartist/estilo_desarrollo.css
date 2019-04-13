@@ -1,0 +1,656 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Black.eot');
+	src: url('fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Black.otf') format('opentype'), url('fonts/Gotham-Black.woff') format('woff'), url('fonts/Gotham-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Ultra.eot');
+	src: url('fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Ultra.otf') format('opentype'), url('fonts/Gotham-Ultra.woff') format('woff'), url('fonts/Gotham-Ultra.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Bold.eot');
+	src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Bold.otf') format('opentype'), url('fonts/Gotham-Bold.woff') format('woff'), url('fonts/Gotham-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Medium.eot');
+	src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/Gotham-Medium.otf') format('opentype'), url('fonts/Gotham-Medium.woff') format('woff'), 
+	url('fonts/Gotham-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-MediumItalic.eot'); 
+	src: url('fonts/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/Gotham-MediumItalic.otf') format('opentype'), url('fonts/Gotham-MediumItalic.woff') format('woff'), 
+	url('fonts/Gotham-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Book.eot');
+	src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/Gotham-Book.otf') format('opentype'), url('fonts/Gotham-Book.woff') format('woff'), 
+	url('fonts/Gotham-Book.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-BookItalic.eot');
+	src: url('fonts/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/Gotham-BookItalic.otf') format('opentype'), url('fonts/Gotham-BookItalic.woff') format('woff'), 
+	url('fonts/Gotham-BookItalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Light.eot');
+	src: url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/Gotham-Light.otf') format('opentype'), url('fonts/Gotham-Light.woff') format('woff'), 
+	url('fonts/Gotham-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-LightItalic.eot');
+	src: url('fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Gotham-LightItalic.otf') format('opentype'), url('fonts/Gotham-LightItalic.woff') format('woff'), 
+	url('fonts/Gotham-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-XLight.eot'); 
+	src: url('fonts/Gotham-XLight.eot?#iefix') format('embedded-opentype'), 
+	url('fonts/Gotham-XLight.otf') format('opentype'), url('fonts/Gotham-XLight.woff') format('woff'),
+	url('fonts/Gotham-XLight.ttf') format('truetype'); 
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-XLightItalic.eot');
+	src: url('fonts/Gotham-XLightItalic.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Gotham-XLightItalic.otf') format('opentype'), url('fonts/Gotham-XLightItalic.woff') format('woff'),
+	url('fonts/Gotham-XLightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-Thin.eot');
+	src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Thin.otf') format('opentype'), url('fonts/Gotham-Thin.woff') format('woff'), url('fonts/Gotham-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/Gotham-ThinItalic.eot');
+	src: url('fonts/Gotham-ThinItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-ThinItalic.otf') format('opentype'), url('fonts/Gotham-ThinItalic.woff') format('woff'), url('fonts/Gotham-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'AvantGarde';
+	src: url('fonts/avantgarde-demi.eot'), url('fonts/avantgarde-demi.eot?#iefix') format('embedded-opentype'), url('fonts/avantgarde-demi.otf') format('opentype'), url('fonts/avantgarde-demi.woff') format('woff'), url('fonts/avantgarde-demi.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvantGarde';
+	src: url('fonts/Avant-GardeBook-Regular.eot'), url('fonts/Avant-GardeBook-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Avant-GardeBook-Regular.otf') format('opentype'), url('fonts/Avant-GardeBook-Regular.woff') format('woff'), url('fonts/Avant-GardeBook-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+
+
+/*boton idiomas*/
+
+
+/* capa del boton volver arriba, con forma de trapecio colgando */
+
+/* boton volver arriba */
+.back-to-top {
+	border: 0;
+	position: fixed;
+	top: 5%;
+	right: 0;
+	opacity: 0.75;
+	display: none;
+	width: 8%;
+	height: auto;
+	z-index: 10;
+}
+
+.back-to-top:hover {
+	opacity: 0.90;
+}
+
+
+/*boton de avanzar a la siguiente seccion
+.go-to-bottom {
+	border: 0;
+	position: fixed;
+	opacity: 0.75;
+	display: none;
+	width: 8%;
+	height: auto;
+	z-index: 10;
+	right: 0;
+	bottom: 0;
+}
+
+.go-to-bottom:hover {
+	opacity: 0.90;
+}
+*/
+
+
+#bandera {	
+	
+	border: 0;
+	position: fixed;
+	bottom: 5%;
+	right: 0;	
+	width: 8%;
+	height: auto;
+	z-index: 10;
+}
+
+#bandera .normal {
+	color: #aaaaaa;	
+	font-weight: bold;	
+}
+
+
+#bandera a:link, a:active, a:visited {
+	text-decoration:none;	
+	color: #00aaaa;
+	font-weight: bolder;		
+}
+
+#bandera a:hover {
+		color: #00ffff;
+}
+
+body {
+	border: 0;
+	background-color: #000000;
+	text-align: left;
+	margin: 0px;
+	font: 14pt Gotham, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	color: #dddddd;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;	
+}
+
+#global_container_ {
+	border: 0;
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	width: 100%; /* 1600px / 1600px = 100% */
+}
+
+#col {
+	border: 0;
+	padding: 2% 0 15%;
+	position: relative;
+	width: 100%; /* 1600px / 1600px = 100% */
+	background: url(images/capas_fondo.jpg) no-repeat center 0;
+	background-position: left top;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	box-sizing: border-box;
+}
+
+#col-2 {
+	border: 0;
+	min-height: 2088px;
+	padding: 2% 0;
+	top: 0;
+	margin-left: 13%;
+	margin-right: 13%;
+	background: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+}
+
+/* definicion de secciones para los anclas y el evento "Go" del menu */
+
+section {
+	display: block;
+	border: 1px solid transparent;
+	clear: both;
+}
+
+section .section {
+	min-height: 100vh;
+}
+
+section#home {
+	min-height: 100vh;
+}
+
+section#biography {
+	min-height: 100vh;
+}
+section#gigs {
+	min-height: 100vh;
+}
+
+section#gallery {
+	min-height: 100vh;
+}
+
+section#contact {
+	min-height: 100vh;
+}
+
+#contenedortotal {
+	border: 0;
+	margin-left: 4%;
+	margin-right: 4%;
+	position: relative;
+}
+
+/* caja contenido texto */
+#home {
+	border: 0;
+	position: relative;
+	top: 2%;
+	padding-top:5%;
+	margin: 0px auto;
+	width: 100%;
+	height: 85%;
+	color: white;
+}
+
+#home p {
+	font-size: 1.6em;
+}
+
+#homeTitle {
+	border: 0;
+	float: left;
+}
+
+#homeTitle #titulo {
+	font-family: AvantGarde;
+	font-weight: 100;
+	color: #00ffff;
+	font-size: 50px;
+	line-height: 0px;
+}
+
+#homeTitle #desc {
+	font-size: 20px;
+	line-height: 0px;
+	letter-spacing: 5px; /*0.25 em */
+}
+
+#homeDetail {
+	border: 0;
+	float: right;
+	margin: 3% 0 0;
+	position: relative;
+	width: 200px;
+	font-size: 9px;
+	line-height: 15px;
+	visibility: hidden;
+}
+
+#homeDetail p {
+	line-height: 15px;
+}
+
+
+#menu {
+	font-weight: 400;
+	font-size: 24px;
+/*	line-height: 250%;*/
+	height:100%;
+	max-height:100%;
+	
+	margin-right: -50px;
+	margin-left: -50px;
+	position: relative;
+	width: 100%;
+
+	float: left;
+	visibility: visible;
+}
+
+/*esto es una ñapa para la parte movil y aqui no se tiene que ver*/
+#menu .linea {
+	visibility: hidden;
+}
+
+#menu ul {
+	border: 0;
+	display: block;
+	color: #00ffff;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height:100%;
+	max-height:100%;
+
+}
+
+#menu li {
+	border: 0;
+	width: 100%;
+	/*line-height: 250%;*/
+	padding-bottom: 50%;
+}
+
+/*esto es una ñapa para la parte movil y aqui no se tiene que ver*/
+#menu li.espacio {
+	visibility: hidden;
+}
+
+#menu a:link, a:visited {
+	color: #dddddd;
+	padding-right: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#menu a:hover, a:active {
+	/*intercambio los colores al poner el cursor encima */
+	color: #00ffff;
+}
+
+.contenido {
+	border: 0;
+	z-index: 0;
+	position: relative;
+	margin: 8% auto -7px;
+}
+
+.contenido .titulo {
+	border: 0;
+	color: #00ffff;
+	font-size: 1.1em;
+	position: relative;
+	width: auto;
+	margin: 0px auto;
+	line-height: 1.9em; /*1.6 ¿?*/
+	text-transform: uppercase;
+}
+
+.contenido .titulo h1 {
+	line-height: 2em;
+	font-weight: 400;
+}
+
+.contenido .datosLargos {
+	border: 0;
+	font-weight: 200;
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.9em; /*1.6 ¿?*/
+}
+
+.contenido .sinEstilo {
+	border: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*/*ultimo cambio hecho para dar interlineado en las listas, no se que tal
+
+ .contenido .sinEstilo li {
+ padding: 0.4em 0;
+ }
+ */
+
+.contenido .resaltado {
+	color: #00ffff;
+}
+
+.contenido p {
+	font-size: 1.1em;
+}
+
+.contenido b {
+	color: #00ffff;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.contenido a {
+	text-decoration: none;
+	color: #00ffff;
+}
+
+.contenido a .a2 {
+	text-decoration: none;
+	color: #dddddd;
+}
+
+
+ 
+.disciplina {
+	
+	min-height: 220px;
+}
+
+.disciplina img {
+	float: right;
+	margin: 20px;
+	/*margin:0 auto 0 auto;*/
+
+}
+
+
+/* galeria */
+#galeria {
+	margin: 0 -23.5%;
+	z-index: 0;
+	position: relative;
+	/*width: cover;	*/
+	border: 0px;
+}
+
+#galeria ul {
+	list-style: none;
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	border: 0px;
+	line-height: 0px;
+}
+
+#galeria li {
+	line-height: 0px;
+	border: 0px;
+	display: inline;
+	text-decoration: none;
+	float: left;
+	width: 33.3%;
+	height: 33%;
+}
+
+.imgcontenedor {
+	width: 100%;
+	height: 100%;
+	/*	width: 33.3%;
+	 height: 33%;*/
+
+	overflow: hidden;
+}
+
+.videocontenedor {
+	position: relative;
+}
+.videocontenedor .ratio {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.videocontenedor iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+.imgcontenedor img {
+	-webkit-transition: all .9s ease; /* Safari y Chrome */
+	-moz-transition: all .9s ease; /* Firefox */
+	-o-transition: all .9s ease; /* IE 9 */
+	-ms-transition: all .9s ease; /* Opera */
+	width: 100%;
+}
+
+.imgcontenedor:hover img {
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+#contact {
+
+	border: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+#contact .tabla {
+	display: block;
+	height: 10%;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	-webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+	-moz-column-rule-width: 1px; /* Firefox */
+	column-rule-width: 1px;
+	-webkit-column-width: 40%; /* Chrome, Safari, Opera */
+	column-width: 40%;
+}
+#contact ul {
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	border: 0px;
+}
+
+#contact li {
+	border: 0px;
+	display: block;
+	text-decoration: none;
+	line-height: 2em;
+	font-size: 1em;
+	letter-spacing: 0.2em;
+	width: 100%;/*48*/
+}
+
+#contact a.mail {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+
+/*esta clase sirve para alinear verticalmente los botones de facebook y linkedin con el texto que le acompañen */
+.imgboton {
+	vertical-align: middle;
+}
+
+footer {
+	border: 0;
+	text-align: center;
+	color: #333333;
+}
+
+footer a {
+	text-decoration: none;
+	color: #333333;
+}
+
+/*pruebas*/
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper object, .videoWrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#video_background {
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	overflow: hidden;
+}
+#video_pattern {
+	background: #fff;
+	position: fixed;
+	opacity: 0.8;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}

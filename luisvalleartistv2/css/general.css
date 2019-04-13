@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Coves';
+    src: url('../fonts/Coves_Bold.otf');    
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Coves';
+    src: url('../fonts/Coves_Light.otf');   
+    font-style: normal;
+    font-weight: 300;
+}
+/*
+@font-face {
+    font-family: 'ArcaMajora';
+    src: url('../fonts/ArcaMajora3-Bold.eot'), 
+        url('../fonts/ArcaMajora3-Bold.eot?#iefix') format('embedded-opentype'),        
+        url('../fonts/ArcaMajora3-Bold.woff2') format('woff2'),
+        url('../fonts/ArcaMajora3-Bold.woff') format('woff'),
+        url('../fonts/ArcaMajora3-Bold.otf') format('truetype'), 
+        url('../fonts/ArcaMajora3-Bold.svg#icomoon') format('svg');         
+    font-weight: 100;
+    font-weight: bold;
+} */
+@font-face {
+    font-family: 'ArcaMajora';
+    src: url('../fonts/ArcaMajora2-Heavy.eot'), 
+        url('../fonts/ArcaMajora2-Heavy.eot?#iefix') format('embedded-opentype'),       
+        url('../fonts/ArcaMajora2-Heavy.woff2') format('woff2'),
+        url('../fonts/ArcaMajora2-Heavy.woff') format('woff'),
+        url('../fonts/ArcaMajora2-Heavy.otf') format('truetype'), 
+        url('../fonts/ArcaMajora2-Heavy.svg#icomoon') format('svg');            
+    /*font-weight: 900;
+    font-weight: bold;*/
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cousin';
+    src: url('http://bastianbux.com/wp-content/themes/odin/fonts/cousine-regular-webfont.woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.l-left {
+    float: left;
+}
+.toggle-menu {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+  z-index: 10;
+}
+.toggle-menu i {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: rgba(139,181,190,0.92);   
+    font-weight: 900;
+    width: 30px;
+    left: 10px;
+    -webkit-transition: all .3s;
+            transition: all .3s;
+}
+.toggle-menu i:nth-child(1) {
+    top: 16px;
+}
+.toggle-menu i:nth-child(2) {
+    top: 24px;
+}
+.toggle-menu i:nth-child(3) {
+    top: 32px;
+}
+.open-menu i:nth-child(1) {
+    top: 25px;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+}
+.open-menu i:nth-child(2) {
+    background: transparent;
+}
+.open-menu i:nth-child(3) {
+    top: 25px;
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+}
+* {
+    margin: 0;
+    font-family: 'ArcaMajora', Arial, sans-serif;
+}
+html {
+    color: #777;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.9em;
+    letter-spacing: 0.10em;
+    word-spacing: 0.5em;
+    font-smooth: always;
+    font-style: normal;
+}
+body {
+    height: 100%;
+    color: #232527; 
+}
+#hamburgerMenu {
+    z-index: 10;
+    position: fixed;
+    max-width: 50%;
+    min-width: 30%;
+    top: 0;
+    left: 0;
+  white-space: nowrap;
+  display: inline-block;
+}
+.bgimg-1,.bgimg-2,.bgimg-3 {
+  overflow: hidden;
+}
+@media (orientation: portrait) { /*movil */
+    .bgimg-1
+    {position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII=) no-repeat left top, url('../images/fondo1v.jpg') no-repeat top center scroll;
+        background-size: cover, auto 100%;
+      z-index: -15;
+    }
+   .bgimg-2
+    {position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII=) no-repeat left top, url('../images/fondo2v.jpg') no-repeat top center scroll;
+        background-size: cover, auto 100%;
+      z-index: -15;
+    }
+    .bgimg-3
+    {position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8nwYAAmoBZ0eMiB8AAAAASUVORK5CYII=) no-repeat left top, url('../images/fondo3v.jpg') no-repeat top center scroll;
+        background-size: cover, auto 100%;
+      z-index: -15;
+    }
+    #home header {
+      position: absolute;
+      width: 100%;
+      max-width: 100%;
+      bottom: 25%;
+      height: 25%;
+      max-height: 30%;
+      color: #000;
+      opacity: 0.75;
+      display: inline;
+      text-align: center;
+      padding: 0 auto;
+      font-size: 0.8em;
+    }
+  #references .columnas li {
+      width: 98%;
+  }
+}
+@media (orientation: landscape) { /*ordenador */
+  .bgimg-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII=) no-repeat top center fixed, url('../images/fondo1.jpg') no-repeat top center fixed;
+        background-size: cover, 100% auto;
+    z-index: -15;
+    }
+  .bgimg-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkmAkAAJ8AmzsOXcYAAAAASUVORK5CYII=) no-repeat top center fixed, url('../images/fondo2.jpg') no-repeat top center fixed;
+        background-size: cover, 100% auto;
+    z-index: -15;
+    }
+  .bgimg-3{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8nwYAAmoBZ0eMiB8AAAAASUVORK5CYII=) no-repeat top center fixed, url('../images/fondo3.jpg') no-repeat top center fixed;
+        background-size: cover, 100% auto;
+    }
+  #home header {
+    position: absolute;
+    display: inline;
+    text-align: justify;
+    justify-content: center;
+    left: 15%;
+    top: 15%;
+    color: #000;
+  }
+  #references .columnas li  {
+      width: 48%;
+  }
+}
+@media (max-width: 736px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+section#biography,  section#references, section#technicalReq, section#contact {
+  overflow: hidden;
+}
+section#biography {
+    min-height: 100vh;  
+}
+section#galleryPics, section#galleryVideos, section#references {
+  min-height: 100vh;
+}
+section#contact {
+  min-height: calc(100vh - 1em);
+}
+#home {
+    border: 0;
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    height: 85%;    
+    min-height: 100vh;
+}
+h1 {/*titulo de la portada (Luis Valle)*/
+    font-family: 'ArcaMajora';
+    /*text-transform: lowercase;*/
+text-transform: uppercase;
+    font-weight: 600;
+    font-size: 350%;
+    letter-spacing: 0.15em;
+    line-height: 100%;
+}
+.subh1 { /*subtitulo de la portada (circus and performing artist)*/
+text-transform: uppercase;
+    font-weight: 400;
+    color: #ECECEC;
+    letter-spacing: 0.08em;
+    font-size: 90%;
+    opacity: .8;
+}
+h1, a {
+    color: #1F8297;
+}
+#references h2 {
+    color: white;
+    text-transform: uppercase;
+    padding: 0% 0% 5% 0%;
+}
+a:hover {
+        opacity: 0.4;
+    -webkit-transition: all .8s linear;
+       -moz-transition: all .8s linear;
+        -ms-transition: all .8s linear;
+         -o-transition: all .8s linear;
+            transition: all .8s linear;
+     text-decoration: line-through;
+}
+.svg {
+     fill:  #3856E1;
+}
+h2 {
+    color:black;
+    margin-bottom: 18%;
+    line-height: 1.2em;
+    border: 0;
+    font-size: 1.8em;
+    position: relative;
+    width: auto;
+    margin: 0px auto;  
+    text-align: center;
+    padding: 0% 0% 5% 0%;
+    text-transform: uppercase;
+}
+#biography {
+    text-align: center;
+    margin: auto auto;
+    background-color: #E0E0E0;  
+    height:auto;
+}
+#biography_content {
+    height: auto;
+}
+article  {
+    padding: 6% 15%;
+}
+#galleryPics, #galleryVideos {
+    padding-top:3%;
+  padding-bottom:3%;
+background-color: #F5F5F5;
+}
+p {
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+a {
+    text-decoration: none;
+}
+a .a2 {
+    text-decoration: none;
+    color: #dddddd;
+}
+#references {
+    color:#E0E0E0;
+    text-align: justify;
+}
+#references ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    border: 0;
+    padding: 0;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+#references li {
+    display: inline-block;
+    padding-bottom: 1%;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    float: left;
+}
+#technicalReq {
+  text-align: left;
+}
+#technicalReq ul {
+    border: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    line-height: 2.4;
+    width: 100%;
+}
+#contact {
+    color: black;
+}
+#contact ul {
+    list-style: none;
+    border: 0px;
+    padding: 0;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+#contact li {
+    border: 0px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    width: 100%;
+    line-height: 2.5em;
+}
+#contact a {
+    color: black;
+}
+#contact span.lineaImagen {
+  line-height: 20px;
+  display: inline-block;
+}
+#contact a.lineaImagen {
+  line-height: 20px;
+  display: inline-block;
+}
+#contact img.lineaImagen {
+  float: left;
+  height: 20px;
+}
+footer {
+  float: bottom;
+    border: 0;
+    text-align: center;
+    background-color: black;
+    color:  #E0E0E0;
+    line-height: 5em;
+}
