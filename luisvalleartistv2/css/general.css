@@ -36,7 +36,7 @@
 }
 @font-face {
     font-family: 'Cousin';
-    src: url('http://bastianbux.com/wp-content/themes/odin/fonts/cousine-regular-webfont.woff2');
+    src: url('../fonts/cousine-regular-webfont.woff2');
     font-weight: 100;
     font-style: normal;
 }
