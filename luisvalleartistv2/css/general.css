@@ -24,9 +24,9 @@
 } */
 @font-face {
     font-family: 'ArcaMajora';
-    src: url('../fonts/ArcaMajora2-Heavy.eot'), 
-        url('../fonts/ArcaMajora2-Heavy.eot?#iefix') format('embedded-opentype'),       
-        url('../fonts/ArcaMajora2-Heavy.woff2') format('woff2'),
+    /*src: url('../fonts/ArcaMajora2-Heavy.eot'), 
+        url('../fonts/ArcaMajora2-Heavy.eot?#iefix') format('embedded-opentype'),       */
+    src:url('../fonts/ArcaMajora2-Heavy.woff2') format('woff2'),
         url('../fonts/ArcaMajora2-Heavy.woff') format('woff'),
         url('../fonts/ArcaMajora2-Heavy.otf') format('truetype'), 
         url('../fonts/ArcaMajora2-Heavy.svg#icomoon') format('svg');            
