@@ -10,28 +10,13 @@
     font-style: normal;
     font-weight: 300;
 }
-/*
+
 @font-face {
     font-family: 'ArcaMajora';
-    src: url('../fonts/ArcaMajora3-Bold.eot'), 
-        url('../fonts/ArcaMajora3-Bold.eot?#iefix') format('embedded-opentype'),        
-        url('../fonts/ArcaMajora3-Bold.woff2') format('woff2'),
-        url('../fonts/ArcaMajora3-Bold.woff') format('woff'),
-        url('../fonts/ArcaMajora3-Bold.otf') format('truetype'), 
-        url('../fonts/ArcaMajora3-Bold.svg#icomoon') format('svg');         
-    font-weight: 100;
-    font-weight: bold;
-} */
-@font-face {
-    font-family: 'ArcaMajora';
-    /*src: url('../fonts/ArcaMajora2-Heavy.eot'), 
-        url('../fonts/ArcaMajora2-Heavy.eot?#iefix') format('embedded-opentype'),       */
-    src:url('../fonts/ArcaMajora2-Heavy.woff2') format('woff2'),
+    src: url('../fonts/ArcaMajora2-Heavy.woff2') format('woff2'),
         url('../fonts/ArcaMajora2-Heavy.woff') format('woff'),
         url('../fonts/ArcaMajora2-Heavy.otf') format('truetype'), 
         url('../fonts/ArcaMajora2-Heavy.svg#icomoon') format('svg');            
-    /*font-weight: 900;
-    font-weight: bold;*/
     font-style: normal;
 }
 @font-face {
