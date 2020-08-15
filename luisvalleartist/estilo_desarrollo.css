@@ -1,32 +1,27 @@
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Black.eot');
-	src: url('fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Black.otf') format('opentype'), url('fonts/Gotham-Black.woff') format('woff'), url('fonts/Gotham-Black.ttf') format('truetype');
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-Black.woff') format('woff'), url('fonts/Gotham-Black.ttf') format('truetype');
 	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Ultra.eot');
-	src: url('fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Ultra.otf') format('opentype'), url('fonts/Gotham-Ultra.woff') format('woff'), url('fonts/Gotham-Ultra.ttf') format('truetype');
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-Ultra.woff') format('woff'), url('fonts/Gotham-Ultra.ttf') format('truetype');
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Bold.eot');
-	src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Bold.otf') format('opentype'), url('fonts/Gotham-Bold.woff') format('woff'), url('fonts/Gotham-Bold.ttf') format('truetype');
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-Bold.woff') format('woff'), url('fonts/Gotham-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('fonts/Gotham-Medium.eot');
-	src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), 
-	url('fonts/Gotham-Medium.otf') format('opentype'), url('fonts/Gotham-Medium.woff') format('woff'), 
+	src: url('fonts/Gotham-Medium.woff') format('woff'), 
 	url('fonts/Gotham-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
@@ -34,9 +29,7 @@
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('fonts/Gotham-MediumItalic.eot'); 
-	src: url('fonts/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'), 
-	url('fonts/Gotham-MediumItalic.otf') format('opentype'), url('fonts/Gotham-MediumItalic.woff') format('woff'), 
+	src: url('fonts/Gotham-MediumItalic.woff') format('woff'), 
 	url('fonts/Gotham-MediumItalic.ttf') format('truetype');
 	font-weight: 500;
 	font-style: italic;
@@ -44,90 +37,76 @@
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('fonts/Gotham-Book.eot');
-	src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), 
-	url('fonts/Gotham-Book.otf') format('opentype'), url('fonts/Gotham-Book.woff') format('woff'), 
+	src: url('fonts/Gotham-Book.woff') format('woff'), 
 	url('fonts/Gotham-Book.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-BookItalic.eot');
-	src: url('fonts/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'), 
-	url('fonts/Gotham-BookItalic.otf') format('opentype'), url('fonts/Gotham-BookItalic.woff') format('woff'), 
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-BookItalic.woff') format('woff'), 
 	url('fonts/Gotham-BookItalic.ttf') format('truetype');
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Light.eot');
-	src: url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), 
-	url('fonts/Gotham-Light.otf') format('opentype'), url('fonts/Gotham-Light.woff') format('woff'), 
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-Light.woff') format('woff'), 
 	url('fonts/Gotham-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-LightItalic.eot');
-	src: url('fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'),
-	url('fonts/Gotham-LightItalic.otf') format('opentype'), url('fonts/Gotham-LightItalic.woff') format('woff'), 
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-LightItalic.woff') format('woff'), 
 	url('fonts/Gotham-LightItalic.ttf') format('truetype');
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-XLight.eot'); 
-	src: url('fonts/Gotham-XLight.eot?#iefix') format('embedded-opentype'), 
-	url('fonts/Gotham-XLight.otf') format('opentype'), url('fonts/Gotham-XLight.woff') format('woff'),
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-XLight.woff') format('woff'),
 	url('fonts/Gotham-XLight.ttf') format('truetype'); 
 	font-weight: 200;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-XLightItalic.eot');
-	src: url('fonts/Gotham-XLightItalic.eot?#iefix') format('embedded-opentype'),
-	url('fonts/Gotham-XLightItalic.otf') format('opentype'), url('fonts/Gotham-XLightItalic.woff') format('woff'),
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-XLightItalic.woff') format('woff'),
 	url('fonts/Gotham-XLightItalic.ttf') format('truetype');
 	font-weight: 200;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-Thin.eot');
-	src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-Thin.otf') format('opentype'), url('fonts/Gotham-Thin.woff') format('woff'), url('fonts/Gotham-Thin.ttf') format('truetype');
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-Thin.woff') format('woff'), url('fonts/Gotham-Thin.ttf') format('truetype');
 	font-weight: 100;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham';
-	src: url('fonts/Gotham-ThinItalic.eot');
-	src: url('fonts/Gotham-ThinItalic.eot?#iefix') format('embedded-opentype'), url('fonts/Gotham-ThinItalic.otf') format('opentype'), url('fonts/Gotham-ThinItalic.woff') format('woff'), url('fonts/Gotham-ThinItalic.ttf') format('truetype');
+	font-family: 'Gotham';	
+	src: url('fonts/Gotham-ThinItalic.woff') format('woff'), url('fonts/Gotham-ThinItalic.ttf') format('truetype');
 	font-weight: 100;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'AvantGarde';
-	src: url('fonts/avantgarde-demi.eot'), url('fonts/avantgarde-demi.eot?#iefix') format('embedded-opentype'), url('fonts/avantgarde-demi.otf') format('opentype'), url('fonts/avantgarde-demi.woff') format('woff'), url('fonts/avantgarde-demi.ttf') format('truetype');
+	src: url('fonts/avantgarde-demi.woff') format('woff'), url('fonts/avantgarde-demi.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'AvantGarde';
-	src: url('fonts/Avant-GardeBook-Regular.eot'), url('fonts/Avant-GardeBook-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Avant-GardeBook-Regular.otf') format('opentype'), url('fonts/Avant-GardeBook-Regular.woff') format('woff'), url('fonts/Avant-GardeBook-Regular.ttf') format('truetype');
+	src: url('fonts/Avant-GardeBook-Regular.woff') format('woff'), url('fonts/Avant-GardeBook-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
@@ -135,8 +114,6 @@
 img, embed, object, video {
 	max-width: 100%;
 }
-
-
 
 /*boton idiomas*/
 
@@ -159,25 +136,6 @@ img, embed, object, video {
 .back-to-top:hover {
 	opacity: 0.90;
 }
-
-
-/*boton de avanzar a la siguiente seccion
-.go-to-bottom {
-	border: 0;
-	position: fixed;
-	opacity: 0.75;
-	display: none;
-	width: 8%;
-	height: auto;
-	z-index: 10;
-	right: 0;
-	bottom: 0;
-}
-
-.go-to-bottom:hover {
-	opacity: 0.90;
-}
-*/
 
 
 #bandera {	
