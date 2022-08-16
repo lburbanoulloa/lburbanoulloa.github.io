@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        /* 
+ * Optional: Makes the sample page fill the window. 
+ */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-map-control-button {
+            background-color: #fff;
+            border: 0;
+            border-radius: 2px;
+            box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            padding: 0 0.5em;
+            font: 400 18px Roboto, Arial, sans-serif;
+            overflow: hidden;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .custom-map-control-button:hover {
+            background: rgb(235, 235, 235);
+        }
+    </style>
+    <script>
+
+        // Note: This example requires that you consent to location sharing when
+        // prompted by your browser. If you see the error "The Geolocation service
+        // failed.", it means you probably did not give permission for the browser to
+        // locate you.
+        let map, infoWindow, ubicacion;
+        let markers = [];
+        function geolocalizarAlUsuario() {
+            // Try HTML5 geolocation.
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        ubicacion = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude,
+                        };
+
+                        infoWindow.setPosition(ubicacion);
+                        infoWindow.setContent("Location found.");
+                        infoWindow.open(map);
+                        map.setCenter(ubicacion);
+                    },
+                    () => {
+                        handleLocationError(true, infoWindow, map.getCenter());
+                    }
+                );
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+        }
+
+        function initMap() {
+
+            var barcelona = {
+                lat: 41.390, lng: 2.154
+            }
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: barcelona, //posicion inicial por defecto, Barcelona
+                zoom: 9,
+            });
+            infoWindow = new google.maps.InfoWindow();
+
+
+            /*
+            un boton para geolocalizar y posicionar
+            */
+
+            const locationButton = document.createElement("button");
+            locationButton.textContent = "Geolozalizar";
+            locationButton.classList.add("custom-map-control-button");
+            map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+            locationButton.addEventListener("click", () => {
+                limpiaMapa();
+                geolocalizarAlUsuario();
+            });
+
+
+
+            /* un boton que busca por texto en el servicio de google maps los resultados cercanos a un punto dado (50000ml max de cercania)*/
+
+            const serviceButton = document.createElement("button");
+            serviceButton.textContent = "Buscar online tiendas cercanas a pos";
+            serviceButton.classList.add("custom-map-control-button");
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(serviceButton);
+            serviceButton.addEventListener("click", () => {
+                limpiaMapa();
+                var ubicacion = {
+                    lat: map.getCenter().k,
+                    lng: map.getCenter().A,
+                };
+
+                var request = {
+                    location: barcelona,
+                    radius: '50000',
+                    query: 'CH Carolina Herrera'
+                };
+
+                service = new google.maps.places.PlacesService(map);
+                service.textSearch(request, callback);
+            });
+
+
+
+            /* un boton que marca puntos segun un array de posiciones */
+            var locations = [
+                ['Madrid Shop', 40.45496798784067, -3.692695795229047],
+                ['Coruña Shop', 43.48521967210087, -8.36335673473474],
+                ['Barcelona Shop', 41.62769061223828, 2.0730287641093454],
+                ['Zaragoza Shop', 41.81629053570147, -0.8383479712480837],
+                ['Palma Shop', 39.729081824723046, 2.6162625870050236],
+                ['Paris Shop', 49.569759096045075, 2.248687945663364],
+                ['Lisboa Shop', 39.35341438028618, -9.13314714048873]
+            ];
+            const marksButton = document.createElement("button");
+            marksButton.textContent = "Marcar posiciones guardadas en array";
+            marksButton.classList.add("custom-map-control-button");
+            map.controls[google.maps.ControlPosition.TOP_RIGHT].push(marksButton);
+            marksButton.addEventListener("click", () => {
+                limpiaMapa();
+                for (i = 0; i < locations.length; i++) {
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                        title: locations[i][0],
+                        map: map
+                    });
+                    markers.push(marker);
+                }
+                
+                map.setCenter(markers[0].position);                
+            });
+        }
+
+
+        // Sets the map on all markers in the array.
+        function setMapOnAll(map) {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(map);
+            }
+        }
+
+        function limpiaMapa() {
+            setMapOnAll(null);
+        }
+
+        function callback(results, status) {
+            if (status == google.maps.places.PlacesServiceStatus.OK) {
+                console.log(results);
+                for (var i = 0; i < results.length; i++) {
+
+                    const coords = results[i].geometry.viewport;
+                    const latLng = new google.maps.LatLng(coords.ub.hi, coords.Ra.hi);
+
+                    var marker = new google.maps.Marker({
+                        position: latLng,
+                        map,
+                        title: results[i].name
+                    });
+                    markers.push(marker);
+                    marker.setMap(map);
+                }
+                map.setCenter(markers[0].position);     
+            }
+
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(
+                browserHasGeolocation
+                    ? "Error: Fallo el servicio de Geolocation."
+                    : "Error: Tu navegador no soporta geolocation o no se ha permitido."
+            );
+            infoWindow.open(map);
+        }
+
+        // Loop through the results array and place a marker for each
+        // set of coordinates.
+        const eqfeed_callback = function (results) {
+            for (let i = 0; i < results.features.length; i++) {
+                const coords = results.features[i].geometry.coordinates;
+                const latLng = new google.maps.LatLng(coords[1], coords[0]);
+
+                new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                });
+            }
+        };
+
+        window.initMap = initMap;
+    </script>
+
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places&callback=initMap&v=weekly"
+        defer></script>
+</body>
+
+</html>
